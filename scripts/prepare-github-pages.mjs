@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
 const outputRoot = resolve("dist/client");
-const sitePrefix = "/shale-sante-clinic-site";
+const sitePrefix = "/novoe-pokolenie-clinic-site";
 const files = ["index.html", "404.html", "index.rsc"];
 const rootAssetPattern = /(["'(=])\/(assets|images|favicon\.svg|file\.svg|globe\.svg|window\.svg)/g;
 
@@ -14,6 +14,6 @@ for (const file of files) {
 }
 
 const index = await readFile(resolve(outputRoot, "index.html"), "utf8");
-if (!index.includes(`${sitePrefix}/assets/`) || !index.includes(`${sitePrefix}/images/clinic-04.webp`)) {
+if (!index.includes(`${sitePrefix}/assets/`) || !index.includes(`${sitePrefix}/images/clinic-hero.jpg`)) {
   throw new Error("GitHub Pages asset paths were not prepared");
 }

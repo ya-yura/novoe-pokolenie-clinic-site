@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
-    "build:pages": "GITHUB_PAGES=1 NEXT_PUBLIC_BASE_PATH=/shale-sante-clinic-site vinext build",
+    "build:pages": "GITHUB_PAGES=1 NEXT_PUBLIC_BASE_PATH=/novoe-pokolenie-clinic-site vinext build",
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
