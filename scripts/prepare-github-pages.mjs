@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 const outputRoot = resolve("dist/client");
 const sitePrefix = "/shale-sante-clinic-site";
 const files = ["index.html", "404.html", "index.rsc"];
-const rootAssetPattern = /(["'(=])\/(assets|favicon\.svg|file\.svg|globe\.svg|window\.svg)/g;
+const rootAssetPattern = /(["'(=])\/(assets|images|favicon\.svg|file\.svg|globe\.svg|window\.svg)/g;
 
 for (const file of files) {
   const filePath = resolve(outputRoot, file);
